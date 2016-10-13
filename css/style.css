@@ -1,18 +1,22 @@
+body,canvas,div{
+	padding: 0;
+	margin: 0;
+}
 a{
 	text-decoration: none;
 }
-#can-imag{
-	width: 800px;
-	height: 600px;
+#can-div{
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 }
 .img-blur{
 	display: block;
-	width: 800px;
-	height: 600px;
 	margin: 0 auto;
 	filter: blur(20px);
+	position: absolute;
+	/*top: 0;*/
+	left: 0;
 	z-index: 0;
 }
 #canvas{
@@ -35,7 +39,7 @@ a{
 	background: #058;
 	position: absolute;
 	bottom: 20px;
-	left: 200px;
+	left: 50px;
 }
 #btn-reset:hover{
 	background: #047;
@@ -44,7 +48,7 @@ a{
 	background: #085;
 	position: absolute;
 	bottom: 20px;
-	right: 200px;
+	right: 50px;
 }
 #btn-show:hover{
 	background: #074;
